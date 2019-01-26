@@ -1,0 +1,120 @@
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+/* :active,
+:focus { outline: none !important; } */
+
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+body {
+  color: #000;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  font-family:
+  -apple-system, BlinkMacSystemFont,  /* Safari Mac/iOS, Chrome */
+  "Segoe UI", Roboto, Oxygen, /* Windows, Android, KDE */
+  Ubuntu, Cantarell, "Fira Sans", /* Ubuntu, Gnome, Firefox OS */
+  "Droid Sans", "Helvetica Neue", sans-serif; /* Old Android */
+}
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+h1, h2, h3,
+h4, h5, h6 {
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 { font-size: 36px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+/* ----------------------------------------------------------------
+	Helper Classes
+-----------------------------------------------------------------*/
+#site-wrapper {
+	position: relative;
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+}
+
+.site-wrapper section { padding-top: 70px; }
+.site-wrapper > section ~ section { padding-top: 0; }
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+
+.content-wrap {
+  padding: 25px 0;
+  line-height: 1.8;
+}
+.container h3 {
+  margin-left: 25px;
+  margin-bottom: 8px;
+}
+
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+.snap-item { margin-left: 25px; }
+.snap-items > .snap-item ~ .snap-item {
+  margin-left: 16px;
+}
+
+.scroll-btn {
+  align-self: center;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+}
+.scroll-btn.l {
+  left: 0;
+}
+.scroll-btn.r {
+  right: 0;
+}
+
+.snap-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: visible;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scroll-behavior: smooth;
+}
+
+.snap-scroll::-webkit-scrollbar { width: 0 !important }
+
+.snap-item img {
+    border-radius: 15px;
+}
